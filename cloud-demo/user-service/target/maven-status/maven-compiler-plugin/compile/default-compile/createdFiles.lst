@@ -1,0 +1,6 @@
+com\atguigu\user\controller\UserController.class
+com\atguigu\user\mapper\UserService.class
+com\atguigu\user\UserApplication.class
+com\atguigu\user\config\PatternProperties.class
+com\atguigu\user\pojo\User.class
+com\atguigu\user\mapper\UserMapper.class

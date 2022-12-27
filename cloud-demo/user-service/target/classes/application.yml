@@ -1,0 +1,33 @@
+#此配置文件后加载
+server:
+  port: 18081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_user?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  #用nacos替换注册中心
+  #cloud:
+  #  nacos:
+  #    server-addr: localhost:8848
+  #    discovery:
+  #      cluster-name: HZ # 集群名称
+  #application:
+  #    name: userservice
+mybatis:
+  type-aliases-package: com.atguigu.user.pojo
+  configuration:
+    map-underscore-to-camel-case: true  #属性为true来开启驼峰功能
+logging:
+  level:
+    com.atguigu: debug
+#pattern:
+#  name: 本地环境local
+#注释eureka的端口,用nacos替换
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:10086/eureka
+info:
+  name: 本地配置文件
